@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order.com</title>
+    <style>
+           *{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    position:  fixed; 
+background-color: rgba(23, 21, 21, 0.596);
+    justify-content: space-between;
+    margin-top: 5px;
+   border-radius: 1rem;
+    width: 100%;
+}
+body{
+    background-color: rgb(21, 86, 16);
+}
+
+/* navigation bar */
+.navbar{
+    display:flex;
+    align-items: center;
+    height: 75px;
+    
+    
+}
+
+/* logo and image */
+
+.logo{
+    margin: 10px 34px;
+}
+
+.logo img{
+    height: 45px;
+    margin: 15px 20px;
+    border-radius: 1.5rem;
+}
+ .navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.navbar ul li a{
+    color: white;
+    padding: 3px 20px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: rgb(212, 255, 0);
+      background-color: brown;
+}
+.home{
+    background: url('img/bg.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column ;
+    padding: 3px 200px;
+     height: 400px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+.hp{
+    font-size: 3.5rem;
+    padding: 12px;
+    text-align: center;
+}
+.hh{
+    font-size: 2.5rem;
+    padding: 12px;
+    margin-top:10px;
+}
+.hs{
+    font-size: 2rem;
+     padding: 12px;
+     text-align: center;
+}
+.hs:hover{
+      text-decoration:underline;
+      cursor:pointer;
+}
+.b{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+.services{
+    color: rgb(252, 252, 0);
+}
+.serv{
+    margin: 34px;
+    display: flex;
+    
+
+    justify-content: space-between;
+}
+.serv .box{
+      width: 28%;
+      border: 2px solid brown; 
+      padding: 28px;
+      border-radius: 25px;
+      background-color: rgba(96, 109, 96, 0.668);
+     
+}
+ .serv .box img{
+     height: 150px;
+     display: block;
+     margin:auto;
+}
+.h{
+    font-size: 35px;
+  
+}
+.h1{
+    font-size: 20px;
+}
+
+
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+form input{
+    height: 25px;
+    width: 300px;
+}
+.track{
+    display: flex;
+}
+.food{
+    border: 2px solid brown; 
+    padding: 28px;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgba(96, 109, 96, 0.668);
+}
+.food{
+    border: 2px solid brown; 
+    padding: 28px;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgba(96, 109, 96, 0.668);
+}
+.contact{
+    
+    background-color: rgba(0, 0, 0, 0.801);
+    color: rgb(255, 251, 0);
+    opacity: 0.8;
+    border-radius: 10px;
+    /* height: 250px; */
+}
+.contact .con{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}   
+    
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="food order.com">
+        </div>
+    
+
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar">
+           <ul>
+            <li class="item"><a href="#">Open App</a></li>
+            <li class="item"><a href="#">Sign In</a></li>
+            
+           </ul>
+
+    </nav>
+</div>
+    <section class="home">
+         <h1 class="hp">Welcome To Our Website</h1>
+        <button class="b">
+            Order Now
+        </button>     
+    </section>
+
+    <section class="services">
+        <h1 class="hp">Our Services</h1>
+        <div class="serv">
+            <div class="box">
+                <img src="img/1.png" alt="#">
+                <h2 class="hs">Food Ordering</h2>
+
+            </div>
+            <div class="box">
+                <img src="img/2.png" alt="#">
+                <h2 class="hs">Online Restaurant</h2>
+            </div>
+            <div class="box">
+                <img src="img/3.png" alt="#">
+                <h2 class="hs">Track Status </h2>
+            </div>
+        </div>
+        <hr color="red">
+        <br>
+     <div class="food">
+
+        <h2 class="hh">Catogories </h2>
+        <br>
+        <form>
+            <h3>Search :- <input type="text"></h3>
+        </form>
+        <br>
+        <div class="cards-container">
+            <div class="card">
+               <img src="./img/pizza.png" class="card-img" alt="#">
+               <p class="card-title">Pizza</p>
+              
+            </div>
+            <div class="card">
+               <img src="./img/burger.png" class="card-img" alt="#">
+               <p class="card-title">Burger</p>
+              
+            </div>
+            <div class="card">
+               <img src="./img/thali.png" class="card-img" alt="#">
+               <p class="card-title">Thali</p>
+              
+            </div>
+            <div class="card">
+               <img src="./img/paneer.png" class="card-img" alt="#">
+               <p class="card-title">Paneer</p>
+               
+            </div>
+            <div class="card">
+               <img src="./img/southindian.png" class="card-img" alt="#">
+               <p class="card-title">South Indian</p>
+              
+            </div>
+            <div class="card">
+               <img src="./img/sandwich.png" class="card-img" alt="#">
+               <p class="card-title">SandWich</p>
+              
+            </div>
+            <div class="card">
+               <img src="./img/dosa.png" class="card-img" alt="#">
+               <p class="card-title">Dosa</p>
+              
+            </div>
+            <div class="card">
+               <img src="./img/noodle.png" class="card-img" alt="#">
+               <p class="card-title">Noodldes</p>
+              
+            </div>
+            <div class="card">
+               <img src="./img/parathe.png" class="card-img" alt="#">
+               <p class="card-title">Parathe</p>
+               
+            </div>
+            <div class="card">
+               <img src="./img/cake.png" class="card-img" alt="#">
+               <p class="card-title">Cake</p>
+              
+            </div>
+            <div class="card">
+               <img src="./img/chocolate.png" class="card-img" alt="#">
+               <p class="card-title">Chocolates</p>
+             
+            </div>
+         
+            <div class="card">
+               <img src="./img/sweet.png" class="card-img" alt="#">
+               <p class="card-title">Sweets</p>
+              
+            </div>
+         </div>
+        </div>
+<br>
+<br>
+        <div class="food">
+         <h2 class="hh">Top Brands</h2>
+              <div class="cards-container">
+                 <div class="card">
+                    <img src="./img/bk.png" class="card-img" alt="#">
+                    <p class="card-title">Burger King</p>
+                    
+                 </div>
+                 <div class="card">
+                    <img src="./img/dominos.png" class="card-img" alt="#">
+                    <p class="card-title">Dominis Pizza</p>
+                    
+                 </div>
+                 <div class="card">
+                    <img src="./img/pizzahut.png" class="card-img" alt="#">
+                    <p class="card-title">Pizza Hut</p>
+                   
+                 </div>
+                 <div class="card">
+                    <img src="./img/kfc.png" class="card-img" alt="#">
+                    <p class="card-title">KFC</p>
+                    
+                 </div>
+                 <div class="card">
+                    <img src="./img/mcdonald.png" class="card-img" alt="#">
+                    <p class="card-title">McDonald</p>
+                  
+                 </div>
+                 <div class="card">
+                    <img src="./img/haldiram.png" class="card-img" alt="#">
+                    <p class="card-title">HaldiRam</p>
+                  
+                 </div>
+                 <div class="card">
+                    <img src="./img/star.png" class="card-img" alt="#">
+                    <p class="card-title">Star Bucks</p>
+                  
+                 </div>
+              </div>
+              <br>
+              
+            </div>   
+    </section>
+    <br>
+    <section class="contact">
+        <br>
+        <h1 class="h">Food Order.com </h1>
+    <div class="con">
+        <h1 class="">About FoodOrder.com</h2>
+            <br>
+        <h1 class="h2">Email id -  abcd@gmail.com</h2>
+            <br>
+        <h1 class="h2">Privacy</h2>
+            <br>
+        <h1 class="h2">Term & Condition</h2>
+            <br>
+        <h1 class="c2">Help</h2>
+            <br>
+        <h1 class="h2">www.myorder.com </h2>
+    </div>
+    </section>
+</body>
+</html>
